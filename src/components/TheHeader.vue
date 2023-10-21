@@ -50,3 +50,9 @@ const menuItems = ref([
   { id: 4, name: 'Fernando de Noronha', slug: '/fernando-de-noronha' }
 ])
 </script>
+
+<style scoped>
+.active-link {
+  opacity: 1;
+}
+</style>

@@ -29,7 +29,8 @@ const router = createRouter({
       name: 'fernando-de-noronha',
       component: () => import('@/views/FernandoDeNoronhaView.vue')
     }
-  ]
+  ],
+  linkActiveClass: 'active-link'
 })
 
 export default router
