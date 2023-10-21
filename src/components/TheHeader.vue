@@ -5,10 +5,10 @@
       aria-label="Global"
     >
       <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
+        <RouterLink to="/" class="-m-1.5 p-1.5">
           <span class="sr-only">Your destination.</span>
-          <img class="h-8 w-auto" src="/images/earth-globe.png" alt="" />
-        </a>
+          <img class="h-8 w-auto" src="/icon-frevo.svg" alt="" />
+        </RouterLink>
       </div>
       <div class="flex lg:hidden">
         <button
@@ -19,33 +19,34 @@
           <img class="h-6 w-auto" src="/images/icon-menu.png" alt="" />
         </button>
       </div>
-      <div class="hidden lg:flex lg:gap-x-12">
-        <a
-          href="#"
-          class="text-base font-semibold leading-6 text-white transition opacity-50 hover:opacity-100"
-          >Brazil</a
-        >
-        <a
-          href="#"
-          class="text-base font-semibold leading-6 text-white transition opacity-50 hover:opacity-100"
-          >Panama</a
-        >
-        <a
-          href="#"
-          class="text-base font-semibold leading-6 text-white transition opacity-50 hover:opacity-100"
-          >Hawaii</a
-        >
-        <a
-          href="#"
-          class="text-base font-semibold leading-6 text-white transition opacity-50 hover:opacity-100"
-          >Jamaica</a
-        >
+      <div v-for="menuItem in menuItems" :key="menuItem.id" class="hidden lg:flex lg:gap-x-12">
+        <RouterLink
+          :to="'/' + menuItem.name.toLocaleLowerCase()"
+          class="text-base font-semibold leading-6 text-white transition opacity-70 hover:opacity-100"
+          >{{ menuItem.name }}
+        </RouterLink>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm font-semibold leading-6 text-white"
-          >View more destinations <span aria-hidden="true">&rarr;</span></a
+        <a
+          href="https://github.com/mmanaclara"
+          target="_blank"
+          class="text-sm font-semibold hover:opacity-80 leading-6 text-white"
         >
+          <img class="h-8 w-auto" src="/images/icon-github.png" alt="" title="My github profile" />
+        </a>
       </div>
     </nav>
   </header>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+import { RouterLink } from 'vue-router'
+
+const menuItems = ref([
+  { id: 1, name: 'Recife' },
+  { id: 2, name: 'Olinda' },
+  { id: 3, name: 'Caruaru' },
+  { id: 4, name: 'Fernando de Noronha' }
+])
+</script>

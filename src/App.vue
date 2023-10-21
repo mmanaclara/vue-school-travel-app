@@ -1,8 +1,3 @@
-<script setup>
-import { RouterView } from 'vue-router'
-import TheHeader from './components/TheHeader.vue'
-</script>
-
 <template>
   <main class="h-screen flex flex-col">
     <header>
@@ -13,5 +8,10 @@ import TheHeader from './components/TheHeader.vue'
     </div>
   </main>
 </template>
+
+<script setup>
+import { RouterView } from 'vue-router'
+import TheHeader from './components/TheHeader.vue'
+</script>
 
 <style src="./assets/tailwind.css"></style>
