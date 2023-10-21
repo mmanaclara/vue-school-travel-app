@@ -21,7 +21,7 @@
       </div>
       <div v-for="menuItem in menuItems" :key="menuItem.id" class="hidden lg:flex lg:gap-x-12">
         <RouterLink
-          :to="'/' + menuItem.name.toLocaleLowerCase()"
+          :to="menuItem.slug"
           class="text-base font-semibold leading-6 text-white transition opacity-70 hover:opacity-100"
           >{{ menuItem.name }}
         </RouterLink>
@@ -44,9 +44,9 @@ import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
 
 const menuItems = ref([
-  { id: 1, name: 'Recife' },
-  { id: 2, name: 'Olinda' },
-  { id: 3, name: 'Caruaru' },
-  { id: 4, name: 'Fernando de Noronha' }
+  { id: 1, name: 'Recife', slug: '/recife' },
+  { id: 2, name: 'Olinda', slug: '/olinda' },
+  { id: 3, name: 'Caruaru', slug: '/caruaru' },
+  { id: 4, name: 'Fernando de Noronha', slug: '/fernando-de-noronha' }
 ])
 </script>
