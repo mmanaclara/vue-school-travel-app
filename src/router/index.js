@@ -28,6 +28,11 @@ const router = createRouter({
       path: '/fernando-de-noronha',
       name: 'fernando-de-noronha',
       component: () => import('@/views/FernandoDeNoronhaView.vue')
+    },
+    {
+      path: '/destination/:id',
+      name: 'destination.show',
+      component: () => import('@/views/DestinationView.vue')
     }
   ],
   linkActiveClass: 'active-link'

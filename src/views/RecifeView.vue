@@ -51,7 +51,7 @@
             <div class="h-48 rounded-md overflow-hidden relative">
               <img
                 class="h-full w-full object-cover object-center opacity-80"
-                src="/images/brazil.jpg"
+                src="/images/recife.jpg"
                 alt=""
               />
               <h3
@@ -63,7 +63,7 @@
             <div class="h-48 rounded-md overflow-hidden relative">
               <img
                 class="h-full w-full object-cover object-center opacity-80"
-                src="/images/brazil.jpg"
+                src="/images/recife.jpg"
                 alt=""
               />
               <h3
