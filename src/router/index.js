@@ -1,9 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import RecifeView from '../views/RecifeView.vue'
-import OlindaView from '../views/OlindaView.vue'
-import CaruaruView from '../views/CaruaruView.vue'
 import HomeView from '../views/HomeView.vue'
-import FernandoDeNoronhaView from '../views/FernandoDeNoronhaView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,22 +12,22 @@ const router = createRouter({
     {
       path: '/recife',
       name: 'recife',
-      component: RecifeView
+      component: () => import('@/views/RecifeView.vue')
     },
     {
       path: '/olinda',
       name: 'olinda',
-      component: OlindaView
+      component: () => import('@/views/OlindaView.vue')
     },
     {
       path: '/caruaru',
       name: 'caruaru',
-      component: CaruaruView
+      component: () => import('@/views/CaruaruView.vue')
     },
     {
       path: '/fernando-de-noronha',
       name: 'fernando-de-noronha',
-      component: FernandoDeNoronhaView
+      component: () => import('@/views/FernandoDeNoronhaView.vue')
     }
   ]
 })
