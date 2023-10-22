@@ -70,3 +70,10 @@ const destination = computed(() =>
   destinations.find((destination) => destination.id === destinationId.value)
 )
 </script>
+
+<style>
+main,
+div {
+  @apply bg-slate-900;
+}
+</style>

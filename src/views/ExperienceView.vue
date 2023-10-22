@@ -10,10 +10,9 @@
               :alt="experience.name"
             />
           </div>
-          <div class="py-2 lg:pr-8 lg:pt-6">
-            <ButtonGoBack />
+          <div class="lg:pr-8">
             <div class="lg:col-span-2">
-              <h1 class="text-2xl font-semibold tracking-tight text-gray-200 mt-8 sm:text-3xl">
+              <h1 class="text-2xl font-semibold tracking-tight text-gray-200 sm:text-3xl">
                 {{ experience.name }}
               </h1>
             </div>
@@ -37,7 +36,6 @@
 import sourceDestinations from '@/destinations.json'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import ButtonGoBack from '@/components/ButtonGoBack.vue'
 
 const { experienceSlug } = defineProps({
   experienceSlug: {
