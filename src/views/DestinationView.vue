@@ -68,8 +68,8 @@ import sourceDestinations from '@/destinations.json'
 import { computed } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 
-const { params } = useRoute()
-const destinationId = computed(() => parseInt(params.id))
+const route = useRoute()
+const destinationId = computed(() => parseInt(route.params.id))
 
 const { destinations } = sourceDestinations
 const destination = computed(() =>

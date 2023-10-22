@@ -10,27 +10,7 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/recife',
-      name: 'recife',
-      component: () => import('@/views/RecifeView.vue')
-    },
-    {
-      path: '/olinda',
-      name: 'olinda',
-      component: () => import('@/views/OlindaView.vue')
-    },
-    {
-      path: '/caruaru',
-      name: 'caruaru',
-      component: () => import('@/views/CaruaruView.vue')
-    },
-    {
-      path: '/fernando-de-noronha',
-      name: 'fernando-de-noronha',
-      component: () => import('@/views/FernandoDeNoronhaView.vue')
-    },
-    {
-      path: '/destination/:id',
+      path: '/destination/:id/:slug',
       name: 'destination',
       component: () => import('@/views/DestinationView.vue')
     }

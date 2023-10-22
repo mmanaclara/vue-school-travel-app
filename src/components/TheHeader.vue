@@ -7,7 +7,12 @@
       <div class="flex lg:flex-1">
         <RouterLink to="/" class="-m-1.5 p-1.5">
           <span class="sr-only">Your destination.</span>
-          <img class="h-8 w-auto" src="/icon-frevo.svg" alt="" />
+          <img
+            class="h-8 w-auto"
+            src="/icon-frevo.svg"
+            alt="Frevo umbrella icon"
+            title="Frevo umbrella icon"
+          />
         </RouterLink>
       </div>
       <div class="flex lg:hidden">
@@ -19,11 +24,15 @@
           <img class="h-6 w-auto" src="/images/icon-menu.png" alt="" />
         </button>
       </div>
-      <div v-for="menuItem in menuItems" :key="menuItem.id" class="hidden lg:flex lg:gap-x-12">
+      <div
+        v-for="destination in destinations"
+        :key="destination.id"
+        class="hidden lg:flex lg:gap-x-12"
+      >
         <RouterLink
-          :to="menuItem.slug"
+          :to="{ name: 'destination', params: { id: destination.id, slug: destination.slug } }"
           class="text-base font-semibold leading-6 text-white transition opacity-70 hover:opacity-100"
-          >{{ menuItem.name }}
+          >{{ destination.name }}
         </RouterLink>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -40,15 +49,10 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
+import sourceDestinations from '@/destinations.json'
 
-const menuItems = ref([
-  { id: 1, name: 'Recife', slug: '/recife' },
-  { id: 2, name: 'Olinda', slug: '/olinda' },
-  { id: 3, name: 'Caruaru', slug: '/caruaru' },
-  { id: 4, name: 'Fernando de Noronha', slug: '/fernando-de-noronha' }
-])
+const { destinations } = sourceDestinations
 </script>
 
 <style scoped>
