@@ -9,7 +9,7 @@
         <RouterLink
           v-for="destination in destinations"
           :key="destination.id"
-          :to="destination.slug"
+          :to="{ name: 'destination', params: { id: destination.id, slug: destination.slug } }"
           class="group relative"
         >
           <CardCity :destination="destination" />
