@@ -51,6 +51,10 @@
             </RouterLink>
           </div>
         </section>
+
+        <section>
+          <RouterView />
+        </section>
       </div>
     </div>
   </div>
@@ -59,7 +63,7 @@
 <script setup>
 import sourceDestinations from '@/destinations.json'
 import { computed } from 'vue'
-import { RouterLink, useRoute } from 'vue-router'
+import { RouterLink, RouterView, useRoute } from 'vue-router'
 import CardExperience from '../components/CardExperience.vue'
 
 const route = useRoute()
