@@ -13,12 +13,7 @@
             />
           </div>
           <div class="py-10 lg:pb-16 lg:pr-8 lg:pt-6">
-            <RouterLink
-              to="/"
-              class="w-fit flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-1 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none"
-            >
-              &larr; Back
-            </RouterLink>
+            <ButtonGoBack />
             <div class="lg:col-span-2">
               <h1 class="text-2xl font-semibold tracking-tight text-gray-200 mt-8 sm:text-3xl">
                 {{ destination.name }}
@@ -65,6 +60,7 @@ import sourceDestinations from '@/destinations.json'
 import { computed } from 'vue'
 import { RouterLink, RouterView, useRoute } from 'vue-router'
 import CardExperience from '../components/CardExperience.vue'
+import ButtonGoBack from '../components/ButtonGoBack.vue'
 
 const route = useRoute()
 const destinationId = computed(() => parseInt(route.params.id))
