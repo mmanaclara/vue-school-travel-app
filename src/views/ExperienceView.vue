@@ -10,15 +10,9 @@
               :alt="experience.name"
             />
           </div>
-          <div class="py-2 lg:pr-8 lg:pt-6">
-            <RouterLink
-              :to="{ name: 'destination', params: { id: destination.id } }"
-              class="w-fit flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-1 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none"
-            >
-              &larr; Back
-            </RouterLink>
+          <div class="lg:pr-8">
             <div class="lg:col-span-2">
-              <h1 class="text-2xl font-semibold tracking-tight text-gray-200 mt-8 sm:text-3xl">
+              <h1 class="text-2xl font-semibold tracking-tight text-gray-200 sm:text-3xl">
                 {{ experience.name }}
               </h1>
             </div>

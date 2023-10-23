@@ -8,8 +8,8 @@
         <RouterLink to="/" class="-m-1.5 p-1.5">
           <span class="sr-only">Your destination.</span>
           <img
-            class="h-8 w-auto"
-            src="/icon-frevo.svg"
+            class="h-8 w-auto opacity-80 transition-opacity hover:opacity-100"
+            src="/images/icon-frevo.svg"
             alt="Frevo umbrella icon"
             title="Frevo umbrella icon"
           />
@@ -39,7 +39,7 @@
         <a
           href="https://github.com/mmanaclara"
           target="_blank"
-          class="text-sm font-semibold hover:opacity-80 leading-6 text-white"
+          class="text-sm font-semibold opacity-80 transition-opacity hover:opacity-100 leading-6 text-white"
         >
           <img class="h-8 w-auto" src="/images/icon-github.png" alt="" title="My github profile" />
         </a>
