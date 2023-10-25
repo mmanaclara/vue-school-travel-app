@@ -1,35 +1,63 @@
-# vue-school-travel-app
+<h1 align="center">
+  🌴 Pernambuco Travel App
+</h1>
 
-This template should help get you started developing with Vue 3 in Vite.
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=Travel&message=App&color=00875F&labelColor=141716" alt="Pernambuco Travel App" />
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/mmanaclara/vue-school-travel-app?color=00875F&labelColor=141716">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/mmanaclara/vue-school-travel-app?color=00875F&labelColor=141716">
+  <img alt="Last commit" src="https://img.shields.io/github/last-commit/mmanaclara/vue-school-travel-app?color=00875F&labelColor=141716">
+</p>
 
-## Recommended IDE Setup
+<br>
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+<p align="center">
+  <img alt="Website view" src="./cover.png" width="100%">
+</p>
 
-## Customize configuration
+## 💻 Project
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Discover Pernambuco's hidden gems with this travel app! Explore the top destinations and unlock unforgettable experiences in this captivating Brazilian state.
+
+## ✨ Technologies
+
+This project was developed using the following technologies:
+
+- [Vite](https://vitejs.dev/)
+- [Vue.js](https://vuejs.org/)
+- [Vue Router](https://router.vuejs.org/)
+- [Tailwind](https://tailwindcss.com/)
+- [ES Lint](https://eslint.org/)
+
+## 🛠 Features
+
+✔ Access detailed route of destinations<br/>
+✔ Access detailed route of top experiences<br/>
+✔ Go back to previous page<br/>
+✔ Current route highlighted in the menu<br/>
+✔ Not Found Page<br/>
+
+## 📖 Knowledge
+
+With Pernambuco Travel App, I improved my skills in:
+
+- `Vue Router` to configure route settings;
+- `Tailwind` to apply styles and create the layout;
+- `ESLint` to define code writing standards;
 
 ## Project Setup
 
-```sh
-npm install
-```
+### 💾 Clone the project
 
-### Compile and Hot-Reload for Development
+Clone the repository to create a local copy on your computer:<br/>
+`$ git clone https://github.com/mmanaclara/vue-school-travel-app.git`
 
-```sh
-npm run dev
-```
+### 🧰 Install dependencies
 
-### Compile and Minify for Production
+`$ npm install`
 
-```sh
-npm run build
-```
+### 🚀 Compile and hot-reload for development
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+`$ npm run dev`
+<br />
+You can now access [`localhost:5173`](http://localhost:5173/) from your browser.
