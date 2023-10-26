@@ -42,9 +42,39 @@ const router = createRouter({
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
       component: () => import('@/views/NotFound.vue')
+    },
+    {
+      path: '/signin',
+      name: 'signin',
+      component: () => import('@/views/SignInView.vue'),
+      meta: {
+        requiresAuth: true,
+        breadcrumbs: [
+          { label: 'Home >', name: 'home' },
+          { label: 'Sign in', name: 'signin' }
+        ]
+      }
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('@/views/LoginView.vue'),
+      meta: {
+        breadcrumbs: [
+          { label: 'Home', name: 'home' },
+          { label: 'Login', name: 'login' }
+        ]
+      }
     }
   ],
   linkActiveClass: 'active-link'
+})
+
+router.beforeEach((to, from = '') => {
+  if (to.meta.requiresAuth && !window.user) {
+    console.log(to, from, 'need to login if you are not already logged in')
+    return { name: 'login' }
+  }
 })
 
 export default router

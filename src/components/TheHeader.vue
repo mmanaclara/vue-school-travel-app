@@ -35,6 +35,11 @@
           >{{ destination.name }}
         </RouterLink>
       </div>
+      <RouterLink
+        :to="{ name: 'signin' }"
+        class="text-base font-semibold leading-6 text-white transition opacity-70 hover:opacity-100"
+        >Sign in</RouterLink
+      >
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a
           href="https://github.com/mmanaclara"
