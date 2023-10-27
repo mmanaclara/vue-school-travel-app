@@ -59,15 +59,19 @@
 
 <script setup>
 import { ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
 
 const username = ref('')
 const password = ref('')
 const router = useRouter()
+const route = useRoute()
 
 const handleLogin = () => {
   console.log('Auth user against API')
   window.user = username.value
-  router.push({ name: 'signin' })
+
+  // redirec to the right user
+  const redirectPath = route.query.redirect || '/signin'
+  router.push(redirectPath)
 }
 </script>
