@@ -65,6 +65,18 @@ const router = createRouter({
           { label: 'Login', name: 'login' }
         ]
       }
+    },
+    {
+      path: '/invoices',
+      name: 'invoices',
+      component: () => import('@/views/InvoicesView.vue'),
+      meta: {
+        requiresAuth: true,
+        breadcrumbs: [
+          { label: 'Home', name: 'home' },
+          { label: 'Invoices', name: 'invoices' }
+        ]
+      }
     }
   ],
   linkActiveClass: 'active-link'
@@ -73,7 +85,7 @@ const router = createRouter({
 router.beforeEach((to, from = '') => {
   if (to.meta.requiresAuth && !window.user) {
     console.log(to, from, 'need to login if you are not already logged in')
-    return { name: 'login' }
+    return { name: 'login', query: { redirect: to.fullPath } }
   }
 })
 

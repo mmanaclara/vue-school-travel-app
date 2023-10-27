@@ -21,7 +21,13 @@
                 Greetings, {{ username }}!
               </h1>
             </div>
-            <div>
+            <div class="flex gap-4">
+              <RouterLink
+                :to="{ name: 'invoices' }"
+                class="w-fit flex mt-8 items-center justify-center rounded-md border border-white px-4 py-1 text-base font-medium text-white hover:text-white hover:bg-indigo-600 hover:border-indigo-600 focus:outline-none"
+              >
+                Go to Invoices
+              </RouterLink>
               <button
                 type="button"
                 class="w-fit flex mt-8 items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-1 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none"

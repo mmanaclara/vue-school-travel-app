@@ -3,7 +3,7 @@
     <header>
       <TheHeader />
     </header>
-    <div class="flex-1">
+    <div class="flex-1 dark:bg-slate-900">
       <RouterView v-slot="{ Component }">
         <transition name="fade" mode="out-in">
           <component :is="Component" :key="$route.path" />
