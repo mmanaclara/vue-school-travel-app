@@ -10,11 +10,3 @@
 </template>
 
 <script setup></script>
-
-<style>
-main,
-div,
-* {
-  @apply bg-slate-900;
-}
-</style>
