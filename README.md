@@ -4,9 +4,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=Travel&message=App&color=00875F&labelColor=141716" alt="Pernambuco Travel App" />
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/mmanaclara/vue-school-travel-app?color=00875F&labelColor=141716">
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/mmanaclara/vue-school-travel-app?color=00875F&labelColor=141716">
-  <img alt="Last commit" src="https://img.shields.io/github/last-commit/mmanaclara/vue-school-travel-app?color=00875F&labelColor=141716">
 </p>
 
 <br>
