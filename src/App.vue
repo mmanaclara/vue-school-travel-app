@@ -18,7 +18,6 @@ import { RouterView } from 'vue-router'
 import TheHeader from './components/TheHeader.vue'
 </script>
 
-<style src="/src/assets/tailwind.css"></style>
 <style lang="css">
 .fade-enter-active,
 .fade-leave-active {
